@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: rgb(216,119,2);
+    background: radial-gradient(circle, rgba(216,119,2,1) 0%, rgba(254,180,85,1) 18%);
+    text-align: center;
+}
+.logo{
+    position: relative; top: 15%;
+    transition: all 300ms;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+h3{
+    color: #034951;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.2rem;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    transition: all 300ms ease-in-out;
+}
+h3:hover{
+    transform: scale(1.2);
+    color: white;
+}
+h3:after{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    background-color: currentColor;
+    top: 0.6em;
+    right: -140px;
+    transform: scale(0);
+    transition: all 0.2s ease-in;
+}
+h3:hover::before{
+    transform: scale(1);
+}
+h3:before{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    background-color: currentColor;
+    top: 0.6em;
+    left: -140px;
+    transform: scale(0);
+    transition: all 0.2s ease-in;
+}
+h3:hover:after{
+    transform: scale(1);
+}
+p{
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;   
+}
+.parrafo{
+    background-image: url(./media/twochurrosfoto3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 20px;
+    padding: 10px;
+    border: solid 10px #034951;
+    border-radius: 30%;
+}
+.items ul{
+    list-style: none;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.items li{
+    display:inline-block;
+    text-align: center;
+    margin: 10px;
+    font-size: 1.6rem;
+    padding: 7px;
+}
+.items li a{
+    background-color: white;
+    color: #034951;
+    border-radius: 40%;
+    text-decoration: none;
+}
+.items li a:hover{
+    background-color: transparent;
+    color: #d77800;
+}
+.items{
+    justify-content:center;
+    position: absolute; left: 350px; top: 30px;
+}
+.fb{
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    transition: all 300ms;
+}
+.fb:hover{
+    transform: scale(1.23);
+}
+.ig{
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    transition: all 300ms;
+}
+.ig:hover{
+    transform: scale(1.23);
+}
+.delivery{
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    transition: all 300ms;
+}
+.delivery:hover{
+    transform: scale(1.23);
+}
+.redes{
+    justify-content: flex-end;
+    display:flex;
+    position: fixed;
+    top: 25px;
+    right: 10px;
+}
+header{
+    background-color: white;
+    display: flex;
+}
+footer{
+    text-align: center;
+    font-family: 'Alegreya', serif;
+
+}
+
+.sliders{
+    position:relative;
+    padding-left: 20%;
+    width: 80%;
+    overflow: hidden;
+}
+.imagen{
+    display: flex;
+    width: 100%;
+}
+.imagen img{
+    height: 600px;
+    width: 100%;
+    transition: all 0.15s ease;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 5%;
+    border-color: black;
+}
+.imagen input{
+    display: none;
+}
+.dots{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.dots label{
+    height: 20px;
+    width: 20px;
+    border-radius: 90%;
+    border: solid #ffffff 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+.dots label:hover{
+    background: #ffffff;
+}
+#churros:checked ~ .m1 {
+    margin-left: 0%;
+}
+#jugos:checked ~ .m2 {
+    margin-left: -100%;
+}
+#salsa:checked ~ .m3 {
+    margin-left: -200%;
+}
+.menu li{
+    transition: all 300ms;
+}
+.menu li:hover{
+    transform: scale(1.15);
+}
+.imagen2{
+    background: url(./media/twochurrosfoto3.jpg);
+    background-size: 100%;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+.row img{
+    width: 100%;
+}
+.column{
+    flex: 25%;
+    padding: 5px;
+}
+.column img{
+    margin-top: 5px;
+}
+.row img{
+    transition:all 300ms;
+}
+.row img:hover{
+    transform: scale(1.25);
+}
+.tamañovi{
+    padding-left: 800px;
+    transition: all 300ms;
+}
+.tamañovi:hover{
+    transform: scale(1.25);
+}
+.produ ol li{
+    padding-top: 30px;
+    font-family: 'Poppins', sans-serif;
+    color:black;
+}
+h4{
+    padding-top: 10px;
+    padding-bottom: 25px;
+    padding-left: 0px;
+    padding-right: 0px;
+    position: relative; top: 15%;
+    transition: all 300ms;
+    box-shadow: 1px 1 px 10px gray;
+}
+h4:hover{
+    transform: scale(1.25);
+}
+.historia{
+    background: url(./media/twochurrosfoto2.jpg);
+    background-size: 100%;;
+}
+.contacto{
+    background: url(./media/twochurrosfoto11.jpg);
+    background-size: 100%;
+}
+.flexbox div{
+    margin: 5px;
+    padding: 5px;
+}
+.titulo{
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 1px;
+    justify-content: center;
+    font-family:'Alegreya', serif;
+}
+.titulo:hover{
+    color: white ;
+    box-shadow: gray;
+    font-family: 'Poppins', sans-serif;
+}
+.fieldset{
+    font-family: 'Poppins', sans-serif;
+}
+.formulario{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(153, 153, 153);
+    transition: all 300ms ease-in;
+    margin: 15px;
+}
+.formulario:hover{
+    transform: scale(1.30);
+}
+.sucursales2{
+    font-family: 'Alegreya', sans-serif;
+    background-color: rgb(230, 230, 230); ;
+}
+.formulario2{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(153, 153, 153);
+    transition: all 300ms ease-in;
+    margin: 15px;
+}
+.formulario2:hover{
+    transform: scale(1.30);
+}
+.fieldset2{
+    font-family: 'Poppins', sans-serif;
+}

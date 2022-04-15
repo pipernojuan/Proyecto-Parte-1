@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Media/--.ico">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img id="arriba" src="./media/logo.png" width="100px" alt="Logo"></a>
+        </div>
+        </div>
+        <section class="redes">
+            <div class="fb">
+                <a href="https://www.facebook.com/twochurros" target="blank"><img src="./media/facebook.png" alt="facebook" width="40px"></a>
+            </div>
+            <div class="ig">
+                <a href="https://www.instagram.com/two_churros/" target="blank"><img src="./media/instagram.png" alt="instagram" width="40px"></a>
+            </div>
+            <div class="delivery">
+                <a href="https://linktr.ee/twochurros" target="blank"><img src="./media/delivery.png" alt="delivery" width="40px"></a>
+            </div>
+        </section>
+        <nav class="items">
+            <ul class="menu">
+                <li><a href="churros.html">Churros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="sucursales.html">Sucursales</a></li>
+                <li><a href="franquicias.html">Franquicias</a></li>
+                <li><a href="trabajaconnosotros.html">Trabajá Con Nosotros</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header><hr>
+    <main class="contacto">
+        <section>
+            <h3>Formulario de Contacto:</h3>
+            <form action="">
+                <fieldset class="fieldset">
+                    <legend>Mandanos tu mensaje</legend>
+                    <div>
+                        <label for="nombre">Escribe tu nombre</label>
+                        <input type="text" name="nombre">
+                    </div> 
+                    <div>
+                        <label for="apellido">Escribe tu apellido</label>
+                        <input type="text" name="apellido">
+                    </div> 
+                    <div>
+                        <label for="email">Escribe tu email</label>
+                        <input type="email" name="email" required>
+                    </div> 
+                    <div>
+                        <label for="sucursal">Dirigido a la Sucursal:</label>
+                        <select name="sucursal" id="" class="sucursales2">
+                            <option value="pal">Palermo</option>
+                            <option value="dev">Devoto</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="comentario">Dejanos tu mensaje</label>
+                        <textarea name="comentario" id="" cols="30" rows="10" placeholder="Nos interesa mucho tu opinión "></textarea>
+                    </div>
+                    <div>
+                        <label for="terminos">Acepta términos y condiciones</label>
+                        <input type="checkbox" name="terminos" value="1" required>
+                    </div>
+                    <input type="submit" value="Enviar Formulario" class="formulario">
+                    <input type="reset" value="Borrar Todo" class="formulario">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+</body>
+<hr>
+<footer>
+    <h5>© 2022 Two Churros reservados todos los derechos.</h5>
+    <a href="#arriba">Ir Arriba</a>
+</footer>
+</html>
